@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocol Σ | Sovereign Core</title>
+    <style>
+        /* Sovereign Design System v1.6.2 */
+        :root { --accent: #6366f1; --bg: #ffffff; --slate: #1e293b; }
+        
+        body {
+            width: 350px;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--slate);
+        }
+
+        header { text-align: center; margin-bottom: 25px; }
+        h1 { font-size: 26px; font-weight: 800; margin: 0; color: var(--accent); letter-spacing: -1.5px; }
+        .tagline { font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: 2px; margin-top: 5px; }
+
+        .input-box { width: 100%; margin-bottom: 15px; }
+        textarea {
+            width: 100%; height: 90px;
+            border: 1px solid #f1f5f9; border-radius: 14px;
+            padding: 12px; font-size: 14px;
+            background: #f8fafc; color: var(--slate);
+            resize: none; box-sizing: border-box; outline: none;
+            transition: border-color 0.3s;
+        }
+        textarea:focus { border-color: var(--accent); }
+
+        .btn-group { display: grid; grid-template-cols: 1fr 1fr; gap: 10px; }
+        button {
+            padding: 12px; border-radius: 12px; border: none;
+            font-size: 11px; font-weight: 700; cursor: pointer;
+            text-transform: uppercase; transition: all 0.2s;
+        }
+        .btn-chat { background: var(--slate); color: white; }
+        .btn-chat:hover { background: var(--accent); }
+        .btn-agent { background: #f1f5f9; color: var(--slate); }
+        .btn-agent:hover { background: #e2e8f0; }
+
+        /* تصفية وحماية النصوص البرمجية */
+        #resultArea { margin-top: 20px; display: none; }
+        .res-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .res-header span { font-size: 10px; font-weight: bold; color: var(--accent); }
+        
+        #copyBtn {
+            background: transparent; color: #94a3b8; border: 1px solid #e2e8f0;
+            padding: 4px 10px; border-radius: 6px; font-size: 10px;
+        }
+
+        pre {
+            background: #0f172a; color: #38bdf8;
+            padding: 18px; border-radius: 14px;
+            font-size: 12px; line-height: 1.6;
+            margin: 0; position: relative;
+            /* منع خروج النص وتداخله */
+            word-break: break-all;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+            text-align: left; direction: ltr;
+        }
+
+        footer { text-align: center; font-size: 9px; color: #cbd5e1; margin-top: 25px; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Protocol Σ</h1>
+        <div class="tagline">Sovereign Logic Engine</div>
+    </header>
+
+    <div class="input-box">
+        <textarea id="rawInput" placeholder="Enter your raw intent..."></textarea>
+    </div>
+
+    <div class="btn-group">
+        <button id="chatBtn" class="btn-chat">Sovereign Chat</button>
+        <button id="agentBtn" class="btn-agent">Agentic Vector</button>
+    </div>
+
+    <div id="resultArea">
+        <div class="res-header">
+            <span>Resulting Protocol</span>
+            <button id="copyBtn">Copy</button>
+        </div>
+        <pre id="protocolOutput"></pre>
+    </div>
+
+    <footer>v1.6.2 | Stable Core System</footer>
+
+    <script src="CAPotocol.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
