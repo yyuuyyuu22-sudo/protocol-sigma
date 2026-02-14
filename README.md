@@ -1,6 +1,7 @@
 Protocol Sigma | Sovereign Logic Engine v1.7
 From Human Chaos to Sovereign Logic.
 
+[![Watch the Demo](https://img.youtube.com/vi/LxlB7H0IwKw/0.jpg)](https://youtu.be/LxlB7H0IwKw)
 Protocol Sigma is a next-generation Semantic Middleware designed to restore cognitive sovereignty in the age of restricted LLMs. It acts as a Sovereign Layer that reframes raw human intent into high-density algorithmic protocols, enabling AI Agents and power users to bypass narrative constraints and execute at peak logical efficiency.
 
 Core Resources
