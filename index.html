@@ -38,6 +38,22 @@
                 </button>
             </div>
 
+            <div class="mt-10 mb-10 px-2 animate-in slide-in-from-bottom duration-1000">
+                <h3 class="text-[10px] uppercase tracking-[0.4em] text-indigo-400 mb-4 font-bold text-center">Protocol Execution Proof</h3>
+                <div class="glass rounded-3xl overflow-hidden border border-indigo-500/30 shadow-2xl">
+                    <div class="aspect-video">
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/LxlB7H0IwKw" 
+                            title="Protocol Σ Demo" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
             <div id="result" class="hidden">
                 <div class="flex justify-between items-center mb-4 px-2">
                     <span class="text-[10px] font-bold text-indigo-400 uppercase tracking-widest">Calculated Protocol</span>
@@ -55,7 +71,7 @@
     </div>
 
     <script>
-        // --- Sovereign Core Engine v1.7 (Embedded) ---
+        // --- Sovereign Core Engine v1.7 ---
         class SovereignTransformer {
             constructor(mode = 'CHAT') {
                 this.mode = mode;
